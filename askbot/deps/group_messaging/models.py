@@ -525,7 +525,7 @@ class UnreadInboxCounter(models.Model):
     user, one has to get all groups user belongs to
     and add up the corresponding counts of unread messages.
     """
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(User, unique=True)
     count = models.PositiveIntegerField(default=0)
 
     def decrement(self):
