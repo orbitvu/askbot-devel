@@ -20,7 +20,7 @@ class HTMLSanitizerMixin(sanitizer.HTMLSanitizerMixin):
         'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'i', 'img', 'ins', 'kbd',
         'li', 'ol', 'p', 'pre', 'q', 's', 'samp', 'small', 'span', 'strike',
         'strong', 'sub', 'sup', 'table', 'tbody', 'td', 'tfoot', 'th', 'thead',
-        'tr', 'tt', 'u', 'ul', 'var', 'param')
+        'tr', 'tt', 'u', 'ul', 'var', 'param', 'iframe')
 
     acceptable_attributes = ('abbr', 'align', 'alt', 'axis', 'border', 'class',
         'cellpadding', 'cellspacing', 'char', 'charoff', 'charset', 'cite',
